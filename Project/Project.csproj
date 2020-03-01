@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aps.cs" />
+    <Compile Include="DataHandler.cs" />
     <Compile Include="Faculty.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

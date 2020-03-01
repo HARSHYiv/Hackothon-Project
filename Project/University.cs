@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project
 {
-    class University
+    public class University
     {
         private int uni_id;
 

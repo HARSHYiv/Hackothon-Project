@@ -1,7 +1,8 @@
-DROP;
+
 USE [master]
 GO
-
+DROP database [404Error_Project_DB]
+GO
 /****** Object:  Database [404Error_Project_DB]    Script Date: 2020/03/01 04:13:47 ******/
 CREATE DATABASE [404Error_Project_DB]
  CONTAINMENT = NONE
@@ -110,7 +111,6 @@ GO
 ALTER DATABASE [404Error_Project_DB] SET  READ_WRITE 
 GO
 
-DROP
 
 USE [404Error_Project_DB]
 GO
@@ -132,7 +132,6 @@ CREATE TABLE [dbo].[tbl_Faculty](
 ) ON [PRIMARY]
 GO
 
-DROP
 
 USE [404Error_Project_DB]
 GO
@@ -162,8 +161,6 @@ CREATE TABLE [dbo].[tblAPS_Key](
 GO
 
 
-DROP
-
 
 USE [404Error_Project_DB]
 GO
@@ -188,7 +185,6 @@ CREATE TABLE [dbo].[tblCourse](
 ) ON [PRIMARY]
 GO
 
-DROP
 
 USE [404Error_Project_DB]
 GO
@@ -213,7 +209,7 @@ CREATE TABLE [dbo].[tblJobs](
 GO
 
 
-DROP;
+
 
 USE [404Error_Project_DB]
 GO

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project
 {
-    class Aps
+    public class Aps
     {
         private int APS_id;
 
