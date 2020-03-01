@@ -12,7 +12,11 @@ namespace Project
     public class DataHandler
     {
         //public static string data = "hgvyuybub";
+<<<<<<< HEAD
         SqlConnection conn = new SqlConnection("Data Source=LAPTOP-5620AL5O\\SQLEXPRESS;Initial Catalog=404Error_Project_DB;Integrated Security=True");
+=======
+        SqlConnection conn = new SqlConnection("data");
+>>>>>>> master
 
         SqlDataReader rdrReader = null;
         //Reading the university data from the database
@@ -25,7 +29,11 @@ namespace Project
                 SqlCommand cmdReadUni = new SqlCommand("Select  * From tblUniversity", conn);
                 while (rdrReader.Read())
                 {
+<<<<<<< HEAD
                     uniList.Add(new University(Convert.ToInt16(rdrReader[0]),Convert.ToInt16(rdrReader[1]),Convert.ToInt16(rdrReader[2])));
+=======
+                    uniList.Add(new University());
+>>>>>>> master
                 }
             }
             catch (Exception e)
@@ -57,7 +65,11 @@ namespace Project
                 SqlCommand cmdReadAPS = new SqlCommand("Select  * From tblAPS Key", conn);
                 while (rdrReader.Read())
                 {
+<<<<<<< HEAD
                     apsList.Add(new Aps(Convert.ToInt16(rdrReader[0]), Convert.ToInt16(rdrReader[1]), Convert.ToInt16(rdrReader[2]), Convert.ToInt16(rdrReader[3]), Convert.ToInt16(rdrReader[4]), Convert.ToInt16(rdrReader[5]), Convert.ToInt16(rdrReader[6]), Convert.ToInt16(rdrReader[7])));
+=======
+                    apsList.Add(new Aps());
+>>>>>>> master
                 }
             }
             catch (Exception ea)
@@ -76,7 +88,11 @@ namespace Project
                     conn.Close();
                 }
             }
+<<<<<<< HEAD
             return apsList;
+=======
+            return uniList;
+>>>>>>> master
         }
     }
 }
