@@ -6,57 +6,29 @@ using System.Threading.Tasks;
 
 namespace Project
 {
-    class Course
+    class Faculty
     {
-        private int course_id;
+        private int faculty_id;
 
-        public int Course_id
+        public int Paculty_id
         {
-            get { return course_id; }
-            set { course_id = value; }
+            get { return faculty_id; }
+            set { faculty_id = value; }
         }
 
-        private int uni_id;
+        private string facultyname;
 
-        public int Uni_id
+        public string FacultyName
         {
-            get { return uni_id; }
-            set { uni_id = value; }
-        }
-
-        private int facultyId;
-
-        public int FacultyId
-        {
-            get { return facultyId; }
-            set { facultyId = value; }
+            get { return facultyname; }
+            set { facultyname = value; }
         }
 
 
-        private string qualification;
-
-        public string Qualification
+        public Faculty(int id, string name)
         {
-            get { return qualification; }
-            set { qualification = value; }
-        }
-
-        private int aps;
-
-        public int APS
-        {
-            get { return aps; }
-            set { aps = value; }
-        }
-
-        public Course(int FacID, int Uni_id, int FacId, string Qual, int APs)
-        {
-            this.course_id = FacID;
-            this.uni_id = Uni_id;
-            this.facultyId = FacId;
-            this.qualification = Qual;
-            this.aps = APs;
-
+            this.faculty_id = id;
+            this.facultyname = name;
         }
     }
 }

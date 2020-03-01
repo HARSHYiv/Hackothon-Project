@@ -24,15 +24,15 @@ namespace Project
             set { aps_id = value; }
         }
 
-        private int uniName;
+        private string uniName;
 
-        public int UniName
+        public string UniName
         {
             get { return uniName; }
             set { uniName = value; }
         }
 
-        public University(int id, int Aps_id, int Names)
+        public University(int id, int Aps_id, string Names)
         {
             this.uni_id = id;
             this.aps_id = Aps_id;

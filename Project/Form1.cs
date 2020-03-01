@@ -14,13 +14,18 @@ namespace Project
     {
         List<string> subjects;
         BindingSource bs = new BindingSource();
+        DataHandler dh = new DataHandler();
+
+        List<Aps> apsList = new List<Aps>();
+        List<University> uniList = new List<University>();
+        List<Course> crsList = new List<Course>();
 
         public Form1()
         {
             InitializeComponent();
             subjects = new List<string>();
 
-
+            
 
             subjects.Add("Math");
             subjects.Add("Home Language");
@@ -207,6 +212,78 @@ namespace Project
         private void cbxSix_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBox();
+        }
+
+        public void getAPS()
+        {
+
+        }
+
+        private void btnGo_Click(object sender, EventArgs e)
+        {
+            List<int> marks = new List<int>();
+            marks.Add(int.Parse(txtOne.Text));
+            marks.Add(int.Parse(txtTwo.Text));
+            marks.Add(int.Parse(txtThree.Text));
+            marks.Add(int.Parse(txtFour.Text));
+            marks.Add(int.Parse(txtFive.Text));
+            marks.Add(int.Parse(txtSix.Text));
+
+            apsList = dh.ReadAPS();
+            uniList = dh.ReadUniversity();
+
+
+            int total = 0;
+            for (int i = 0; i < uniList.Count; i++)
+            {
+                int ASPT = uniList[i].APS_ID;
+
+                Aps temp = apsList[ASPT];
+
+                int ApsCount = 0;
+
+                for (int j = 0; j < marks.Count; j++)
+                {
+
+                    if (marks[j] > 90 || marks[j] < 100)
+                    {
+                        ApsCount = ApsCount + temp.NintyTo100;
+                    }
+                    else if (marks[j] > 80 || marks[j] < 89)
+                    {
+                        ApsCount = ApsCount + temp.Eighty;
+                    }
+                    else if (marks[j] > 70 || marks[j] < 79)
+                    {
+                        ApsCount = ApsCount + temp.Seventy;
+                    }
+                    else if (marks[j] > 60 || marks[j] < 69)
+                    {
+                        ApsCount = ApsCount + temp.Sixties;
+                    }
+                    else if (marks[j] > 50 || marks[j] < 59)
+                    {
+                        ApsCount = ApsCount + temp.Fifties;
+                    }
+                    else if (marks[j] > 40 || marks[j] < 49)
+                    {
+                        ApsCount = ApsCount + temp.forties ;
+                    }
+                    else if (marks[j] > 30 || marks[j] < 39)
+                    {
+                        ApsCount = ApsCount + temp.thirties;
+                    }
+                    else if (marks[j] > 0 || marks[j] < 29)
+                    {
+                        ApsCount = ApsCount + temp.zeroto29;
+                    }
+                }
+                total = ApsCount;
+            }
+
+            Display ds = new Display(total);
+            ds.Show();
+            this.Hide();
         }
     }
 }

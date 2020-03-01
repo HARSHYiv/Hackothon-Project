@@ -62,6 +62,7 @@
             this.btnGo.TabIndex = 1;
             this.btnGo.Text = "GO!";
             this.btnGo.UseVisualStyleBackColor = true;
+            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
             // 
             // cbxOne
             // 

@@ -7,3 +7,14 @@ D:\Harshy\Documents\Hackathon\Project404\Project\obj\Debug\Project.Properties.Re
 D:\Harshy\Documents\Hackathon\Project404\Project\obj\Debug\Project.csproj.GenerateResource.cache
 D:\Harshy\Documents\Hackathon\Project404\Project\obj\Debug\Project.exe
 D:\Harshy\Documents\Hackathon\Project404\Project\obj\Debug\Project.pdb
+C:\Users\anzim\OneDrive\Documents\Hackathon\Hackothon-Project\Project\bin\Debug\Project.exe.config
+C:\Users\anzim\OneDrive\Documents\Hackathon\Hackothon-Project\Project\bin\Debug\Project.exe
+C:\Users\anzim\OneDrive\Documents\Hackathon\Hackothon-Project\Project\bin\Debug\Project.pdb
+C:\Users\anzim\OneDrive\Documents\Hackathon\Hackothon-Project\Project\obj\Debug\Project.csprojAssemblyReference.cache
+C:\Users\anzim\OneDrive\Documents\Hackathon\Hackothon-Project\Project\obj\Debug\Project.Form1.resources
+C:\Users\anzim\OneDrive\Documents\Hackathon\Hackothon-Project\Project\obj\Debug\Project.Properties.Resources.resources
+C:\Users\anzim\OneDrive\Documents\Hackathon\Hackothon-Project\Project\obj\Debug\Project.csproj.GenerateResource.cache
+C:\Users\anzim\OneDrive\Documents\Hackathon\Hackothon-Project\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\anzim\OneDrive\Documents\Hackathon\Hackothon-Project\Project\obj\Debug\Project.exe
+C:\Users\anzim\OneDrive\Documents\Hackathon\Hackothon-Project\Project\obj\Debug\Project.pdb
+C:\Users\anzim\OneDrive\Documents\Hackathon\Hackothon-Project\Project\obj\Debug\Project.Display.resources
