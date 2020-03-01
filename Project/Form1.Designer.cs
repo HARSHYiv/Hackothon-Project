@@ -42,6 +42,7 @@
             this.txtFour = new System.Windows.Forms.TextBox();
             this.txtFive = new System.Windows.Forms.TextBox();
             this.txtSix = new System.Windows.Forms.TextBox();
+            this.chkDone = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -158,11 +159,22 @@
             this.txtSix.Size = new System.Drawing.Size(37, 22);
             this.txtSix.TabIndex = 13;
             // 
+            // chkDone
+            // 
+            this.chkDone.AutoSize = true;
+            this.chkDone.Location = new System.Drawing.Point(258, 294);
+            this.chkDone.Name = "chkDone";
+            this.chkDone.Size = new System.Drawing.Size(105, 21);
+            this.chkDone.TabIndex = 14;
+            this.chkDone.Text = "Tick if Done";
+            this.chkDone.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(401, 397);
+            this.Controls.Add(this.chkDone);
             this.Controls.Add(this.txtSix);
             this.Controls.Add(this.txtFive);
             this.Controls.Add(this.txtFour);
@@ -201,6 +213,7 @@
         private System.Windows.Forms.TextBox txtFour;
         private System.Windows.Forms.TextBox txtFive;
         private System.Windows.Forms.TextBox txtSix;
+        private System.Windows.Forms.CheckBox chkDone;
     }
 }
 
